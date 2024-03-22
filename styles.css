@@ -1,0 +1,84 @@
+
+.center_plot {
+    margin: auto;
+    text-align: center;
+}
+
+div.tooltip{
+    position: absolute;
+    text-align: center;
+    width: "fit-content";
+    height: "fit-content";
+    padding: 20px;
+    pointer-events: none;
+    font-size: large;
+    color: white;
+    
+    border-radius: 20%
+    
+    }
+
+.title {
+    text-align: center;
+    font-size: 40px;
+}
+
+.introduction {
+    text-align: center;
+    font-size: 20px;
+}
+
+#cap_ranking {
+    text-align: center;
+    font-size: 20px;
+}
+
+#p1 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#p1_2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#p2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#p3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#p3_2 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#p4 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#p5 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#conclusion {
+    text-align: center;
+    font-size: 20px;
+}
+
+#Appendix {
+   
+    color: gray;
+}
+#Appendix_h{
+    color: gray;
+    font-size: 16px;
+    font-weight: bold;
+}

@@ -1,0 +1,191 @@
+<html>
+
+    <head>
+        <script type="text/javascript" src="app.js">
+    </script>
+        <link rel="stylesheet" href="styles.css"><script
+            src="https://d3js.org/d3.v7.min.js"></script>
+
+    </head>
+
+    <body onload=FinalProject()>
+        <div>
+            <h2 class="title">Equity Market Analysis</h2>
+
+            <div class="Introduction">
+                Equity Market, or stock market, is one of biggest focus for investors
+                and traders. They invest in ETF, trade individual stocks, or simply talk
+                baout them for fun. As a trader myself, I thought it would be fun
+                to do some basic analysis of the few most famous stocks, so people who like
+                to study a little bit about the market can have a general idea of what's going on.
+            </div>
+            <br>
+            <div>
+                
+                <div id="p1">
+                    Starting from selecting compnies, I listed out few stocks that you might have heard it
+                    somewhere since they are so popular, and I will first show you their historical prices
+                    to start off the analysis. The time was cut from 2018 to 2023 today, and each price represents the adjusted
+                    market closing price, or the cost of buying a share. The buttons below allows you to choose the stocks you like,
+                    and it will automatically update the prices. Also if you brush over the range you are curious about,
+                    it will tells you the highest and lowest price in that range, displaying at the upper right corner.
+                </div>
+                <br>
+            </div>
+            
+            <div id="radio_q1" class="center_plot">
+                <input type="radio" id="q1_AAPL" name="ticker" value="AAPL" checked="checked">
+                <label for="AAPL">Apple</label>
+                <input type="radio" id="q1_AMZN" name="ticker" value="AMZN" checked="checked">
+                <label for="AMZN">Amazon</label>
+                <input type="radio" id="q1_BRK-A" name="ticker" value="BRK-A" checked="checked">
+                <label for="AAPL">Berkshire Hathaway</label>
+                <input type="radio" id="q1_CVX" name="ticker" value="CVX" checked="checked">
+                <label for="AAPL">Chevron Corporation</label>
+                <input type="radio" id="q1_GOOG" name="ticker" value="GOOG" checked="checked">
+                <label for="GOOG">Google</label>
+                <input type="radio" id="q1_JPM" name="ticker" value="JPM" checked="checked">
+                <label for="JPM">J.P. Morgan</label>
+                <br>
+                <input type="radio" id="q1_MCD" name="ticker" value="MCD" checked="checked">
+                <label for="MCD">Mcdonald's</label>
+                <input type="radio" id="q1_META" name="ticker" value="META" checked="checked">
+                <label for="META">Meta</label>
+                <input type="radio" id="q1_MSFT" name="ticker" value="MSFT" checked="checked">
+                <label for="MSFT">Microsoft</label>
+                <input type="radio" id="q1_TSLA" name="ticker" value="TSLA" checked="checked">
+                <label for="TSLA">Tesla</label>
+                <input type="radio" id="q1_XOM" name="ticker" value="XOM" checked="checked">
+                <label for="XOM">Exxon Mobil</label>
+               
+        </div>
+            <div id="q1_plot" class="center_plot">
+            </div>
+            <div id="p1_2">
+                What you may noticed in the first place is that the price for most companies has gone up since 2018. Taking
+                Microsoft as an example, the price was at ultimate low on March 2018 (green pont), and it had reached
+                340 dollars at the end of 2021, which almost quadrupled. The reason is that having a large Capital allows these
+                 companies to invest in more projects, develop more products, and thus generate more revenue and profits. 
+                 The chart below scratchs their market values, and we can take a look of why they perform so well. 
+                 Microsoft, for instance, has almost 1900 billions market cap, which can be larger than most of the other
+                 stocks summing up together. If you want to get a clear picture of ordering, you can rank their capitals
+                 using the button below.
+                
+            </div>
+            <br>
+        
+        </div>
+
+    
+            <div id="q2">
+
+                <div id="cap_ranking">
+                    <button type="button", id="sort_button">Rank the companies</button>
+                    <br><br>
+                </div>
+
+            </div>
+           
+            <div id="q2_plot" class="center_plot">
+            </div>
+            
+        </div>
+
+        <div>
+
+
+            <div>
+                
+            </div>
+            <br>
+            <div id="p3">
+                Then, you might wonder, if these companies performed outstanding in the past few years. Are there specific
+                stats that allow us to evaluate the companies, such as how much could I gain if I invest in few of them. 
+                Matter of fact, before you invest in any of these companies, you should notice first that
+                each companies can be categorized into different sectors, and when a sector is having its peak,
+                the companies in that sector will also perform well.
+            </div>
+            <div>
+                
+                <div id="q3_plot" class="center_plot">
+                </div>
+            </div>
+            <div id="p3_2"> As this graph depicted, Suppose you equally diversified your portfolio into three stocks: Apple, Microsoft
+                and Tesla five years ago, your accumulated log return would be around 4.5 times of the deposit. That is a total
+                of 50 percent increase on the initial investment for the past five years if you were into the Technology sector.
+            </div>
+            <div>
+
+
+            <div>
+                <div> 
+                </div>
+            </div>
+            <br><br>
+            <div id="p4">
+                Attractive as that return sounds like, most of these companies blend in our life and we interact with them
+                quite ofently. If we look at the geographic graph below, we see that most of these companies' headquarters 
+                are located in some of the most popular and crowded states in the United States. For example, if you hover
+                over California, you will discover that most big tech companies that we selected set your headquarters over there. 
+                Therefore, getting a sense of the atmosphere of these companies and gaining an insight of their current status are within easy reach.
+            </div>
+            <div>
+                
+                <div id="q4_plot" class="center_plot">
+                </div>
+            
+            </div>
+
+            <div>
+
+
+                <div>
+                    
+                </div>
+                <div id="p5">
+                    So all the information so far make you curious and you like to make your own first trade, you can, and you should, 
+                    check out the relative performance of each company to the market as a whole (IXIC) to pick your first stock. As depicted
+                    by the diagram, companies such as Tesla and Apple show huge outperfoamnce compared to other stocks in the past, and they are getting more attention 
+                    from the investors and funds. Meanwhile, J.P Morgan and Amazon did not perform as well as the others,
+                    so you might want to investigate more before making a decision.
+                    
+                </div>
+                <div>
+                    
+            
+                    <div id="q5_plot" class="center_plot">
+                    </div>
+                    <div id="Conclusion">
+                        Among all, stock market is a great place to invest your money. However, the risk associated with it 
+                        has not yet been discussed. In real cases, we can rarely conclude the future with historical data unless
+                        we conducted rigorous analysis. With That being siad, the views above do not constitute investment advice and should not be relied on when making investment.
+                        But, I do wish you good luck in your investment journey.
+                    </div>
+                </div>
+                <br><br>
+                <div>
+
+
+                    <div>
+                        <h3 id="Appendix_h">About visualization and data</h3>
+                        <div> 
+                        </div>
+                    </div>
+                   
+                    <div>
+                    
+                        <div id="Appendix">
+                            Plot 1: Color scheme: blue, red, and green; Mark: lines, points; Channel: Length. <br>
+                            Plot 2: Color scheme: blue; Mark: lines; Channel: Position(Horizontal).<br>
+                            Plot 3: Color scheme: random colors with contrast; Mark: lines; Channel: Position(Vertical). <br>
+                            Plot 4: Color scheme: random colors with contrast; Mark: areas; Channel: color. <br>
+                            Plot 5: Color scheme: blue, purple, red, and green; Mark: lines, points; Channel: area and color. <br>
+                            <br>
+                            Main Source of the two datasets are from Yahoo Finance.
+                        </div>
+                    
+                    
+                    </div>
+
+        </body>
+    </html>
